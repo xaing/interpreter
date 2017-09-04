@@ -41,14 +41,4 @@ public class Calculator {
         return this.expression.interpreter(var);
     }
 
-    public static void main(String[] args) {
-        String expStr = "a+b-c";
-        HashMap<String,Integer> var = new HashMap<String, Integer>();
-        var.put("a",1);
-        var.put("b",2);
-        var.put("c",3);
-        Calculator calculator = new Calculator(expStr);
-        int run = calculator.run(var);
-        System.out.println(run);
-    }
 }

@@ -14,6 +14,6 @@ public class VarExpression extends Expression {
     }
 
     public int interpreter(HashMap<String, Integer> var) {
-        return var.get(key);
+        return var.containsKey(key) ? var.get(key) : Integer.parseInt(key);
     }
 }
